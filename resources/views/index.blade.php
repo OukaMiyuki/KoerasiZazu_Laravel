@@ -71,7 +71,7 @@
                             <a href="#">Pinjam</a>
                         </li>
                         <li>
-                            <a href="#">Tzarik</a>
+                            <a href="#">Tarik</a>
                         </li>
                         <li>
                             <a href="#">Angsur</a>
@@ -109,10 +109,10 @@
                                 <a class="nav-link" href="#">Profil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Simpan</a>
+                                <a class="nav-link" href="{!! url('page/simpan'); !!}">Simpan</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pinjam</a>
+                                <a class="nav-link" href="{!! url('page/pinjam'); !!}">Pinjam</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Widthraw</a>
@@ -133,7 +133,11 @@
               @include('@components/Daftar_Anggota')
             @elseif(\Request::is('page/daftar_user'))
               @include('@components/Daftar_User')
-            @elseif(\Request::is('page/profil/kontak/user/manager'))
+            @elseif(\Request::is('page/simpan'))
+              @include('@components/Tambah_Simpanan')
+            @elseif(\Request::is('page/pinjam'))
+              @include('@components/Tambah_Pinjaman')
+            @elseif(\Request::is('page/profil/manager'))
               @include('@components/Profil')
             @elseif(\Request::is('admin_page'))
               <p>Halaman Utama, Harap pilih database untuk melakukan operasi!</p>
@@ -159,6 +163,26 @@
             var fileName = $(this).val();
             $(this).next('.custom-file-label').html(fileName);
         })
+
+        $(function () {
+            $(document).on('change', ':file', function () {
+                var input = $(this),
+                numFiles = input.get(0).files ? input.get(0).files.length : 1,
+                label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [numFiles, label]);
+            });
+            $(document).ready(function () {
+                $(':file').on('fileselect', function (event, numFiles, label) {
+                    var input = $(this).parents('.input-group').find(':text'),
+                        log = numFiles > 1 ? numFiles + ' files selected' : label;
+                    if (input.length) {
+                        input.val(log);
+                    } else {
+                        if (log) alert(log);
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>

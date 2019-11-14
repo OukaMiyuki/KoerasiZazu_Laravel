@@ -96,93 +96,28 @@
                                     <table id="tblMember" class="table table-striped table-bordered display table-sm" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th width="150">NIK</th>
+                                                <th width="10">No.</th>
+                                                <th width="80">Kode</th>
                                                 <th width="250">Nama</th>
-                                                <th width="150">Jenis Kelamin</th>
-                                                <th width="250">Status Anggota</th>
+                                                <th width="200">Jenis Kelamin</th>
+                                                <th width="80">Status</th>
                                             </tr>
                                         </thead>
+                                        @php
+                                            $no = 1
+                                        @endphp
                                         <tbody>
-                                            <tr>
-                                                <td>1234567890123456</td>
-                                                <td>Moch. Dazti Amar Wibianto</td>
-                                                <td>Laki-laki</td>
-                                                <td align="center">
-                                                    Aktif
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1234567890123456</td>
-                                                <td>Moch. Dazti Amar Wibianto</td>
-                                                <td>Laki-laki</td>
-                                                <td align="center">
-                                                    Aktif
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1234567890123456</td>
-                                                <td>Moch. Dazti Amar Wibianto</td>
-                                                <td>Laki-laki</td>
-                                                <td align="center">
-                                                    Aktif
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1234567890123456</td>
-                                                <td>Moch. Dazti Amar Wibianto</td>
-                                                <td>Laki-laki</td>
-                                                <td align="center">
-                                                    Aktif
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1234567890123456</td>
-                                                <td>Moch. Dazti Amar Wibianto</td>
-                                                <td>Laki-laki</td>
-                                                <td align="center">
-                                                    Aktif
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1234567890123456</td>
-                                                <td>Moch. Dazti Amar Wibianto</td>
-                                                <td>Laki-laki</td>
-                                                <td align="center">
-                                                    Aktif
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1234567890123456</td>
-                                                <td>Moch. Dazti Amar Wibianto</td>
-                                                <td>Laki-laki</td>
-                                                <td align="center">
-                                                    Aktif
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1234567890123456</td>
-                                                <td>Moch. Dazti Amar Wibianto</td>
-                                                <td>Laki-laki</td>
-                                                <td align="center">
-                                                    Aktif
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1234567890123456</td>
-                                                <td>Moch. Dazti Amar Wibianto</td>
-                                                <td>Laki-laki</td>
-                                                <td align="center">
-                                                    Aktif
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1234567890123456</td>
-                                                <td>Moch. Dazti Amar Wibianto</td>
-                                                <td>Laki-laki</td>
-                                                <td align="center">
-                                                    Aktif
-                                                </td>
-                                            </tr>
+                                            @foreach($data as $d)
+                                                @if($d->status_anggota != "Non-Aktif")
+                                                    <tr>
+                                                        <td>{{$no++}}</td>
+                                                        <td>{{$d->kode_member}}</td>
+                                                        <td>{{$d->nama}}</td>
+                                                        <td align="center">{{$d->jk}}</td>
+                                                        <td align="center">{{$d->status_anggota}}</td>
+                                                    </tr>
+                                                @endif
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>

@@ -11,16 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('page/daftar_anggota', function () {
-    return view('index');
-});
+//Route::get('/', function () {
+//    return view('index');
+//});
+Route::get('/','dataMember@showMember');
+//Route::get('page/daftar_anggota', function () {
+//    return view('index');
+//});
+Route::get('page/daftar_anggota','dataMember@showMember');
 Route::get('page/daftar_user', function () {
     return view('index');
 });
-Route::get('page/profil/kontak/user/manager', function () {
+Route::get('page/simpan','dataMember@showMember');
+Route::get('page/pinjam', function () {
     return view('index');
 });
+Route::get('page/profil/manager', function () {
+    return view('index');
+});
+
+Route::post('add/member', 'member@addMember')->name('upload.member');
