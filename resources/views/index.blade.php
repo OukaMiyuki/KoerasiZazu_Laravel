@@ -71,7 +71,11 @@
                             <a href="#">Pinjam</a>
                         </li>
                         <li>
+<<<<<<< HEAD
                             <a href="#">Tarik</a>
+=======
+                            <a href="#">Tzarik</a>
+>>>>>>> a7d788509d1d7bb72156fff90a13d323c79cfacd
                         </li>
                         <li>
                             <a href="#">Angsur</a>
@@ -109,10 +113,17 @@
                                 <a class="nav-link" href="#">Profil</a>
                             </li>
                             <li class="nav-item">
+<<<<<<< HEAD
                                 <a class="nav-link" href="{!! url('page/simpan'); !!}">Simpan</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{!! url('page/pinjam'); !!}">Pinjam</a>
+=======
+                                <a class="nav-link" href="#">Simpan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pinjam</a>
+>>>>>>> a7d788509d1d7bb72156fff90a13d323c79cfacd
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Widthraw</a>
@@ -133,11 +144,15 @@
               @include('@components/Daftar_Anggota')
             @elseif(\Request::is('page/daftar_user'))
               @include('@components/Daftar_User')
+<<<<<<< HEAD
             @elseif(\Request::is('page/simpan'))
               @include('@components/Tambah_Simpanan')
             @elseif(\Request::is('page/pinjam'))
               @include('@components/Tambah_Pinjaman')
             @elseif(\Request::is('page/profil/manager'))
+=======
+            @elseif(\Request::is('page/profil/kontak/user/manager'))
+>>>>>>> a7d788509d1d7bb72156fff90a13d323c79cfacd
               @include('@components/Profil')
             @elseif(\Request::is('admin_page'))
               <p>Halaman Utama, Harap pilih database untuk melakukan operasi!</p>
@@ -163,6 +178,7 @@
             var fileName = $(this).val();
             $(this).next('.custom-file-label').html(fileName);
         })
+<<<<<<< HEAD
 
         $(function () {
             $(document).on('change', ':file', function () {
@@ -183,6 +199,8 @@
                 });
             });
         });
+=======
+>>>>>>> a7d788509d1d7bb72156fff90a13d323c79cfacd
     </script>
 </body>
 </html>

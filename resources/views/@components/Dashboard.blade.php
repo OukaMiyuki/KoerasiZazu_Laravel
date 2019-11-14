@@ -96,6 +96,7 @@
                                     <table id="tblMember" class="table table-striped table-bordered display table-sm" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
+<<<<<<< HEAD
                                                 <th width="10">No.</th>
                                                 <th width="80">Kode</th>
                                                 <th width="250">Nama</th>
@@ -118,6 +119,95 @@
                                                     </tr>
                                                 @endif
                                             @endforeach
+=======
+                                                <th width="150">NIK</th>
+                                                <th width="250">Nama</th>
+                                                <th width="150">Jenis Kelamin</th>
+                                                <th width="250">Status Anggota</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1234567890123456</td>
+                                                <td>Moch. Dazti Amar Wibianto</td>
+                                                <td>Laki-laki</td>
+                                                <td align="center">
+                                                    Aktif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1234567890123456</td>
+                                                <td>Moch. Dazti Amar Wibianto</td>
+                                                <td>Laki-laki</td>
+                                                <td align="center">
+                                                    Aktif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1234567890123456</td>
+                                                <td>Moch. Dazti Amar Wibianto</td>
+                                                <td>Laki-laki</td>
+                                                <td align="center">
+                                                    Aktif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1234567890123456</td>
+                                                <td>Moch. Dazti Amar Wibianto</td>
+                                                <td>Laki-laki</td>
+                                                <td align="center">
+                                                    Aktif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1234567890123456</td>
+                                                <td>Moch. Dazti Amar Wibianto</td>
+                                                <td>Laki-laki</td>
+                                                <td align="center">
+                                                    Aktif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1234567890123456</td>
+                                                <td>Moch. Dazti Amar Wibianto</td>
+                                                <td>Laki-laki</td>
+                                                <td align="center">
+                                                    Aktif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1234567890123456</td>
+                                                <td>Moch. Dazti Amar Wibianto</td>
+                                                <td>Laki-laki</td>
+                                                <td align="center">
+                                                    Aktif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1234567890123456</td>
+                                                <td>Moch. Dazti Amar Wibianto</td>
+                                                <td>Laki-laki</td>
+                                                <td align="center">
+                                                    Aktif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1234567890123456</td>
+                                                <td>Moch. Dazti Amar Wibianto</td>
+                                                <td>Laki-laki</td>
+                                                <td align="center">
+                                                    Aktif
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1234567890123456</td>
+                                                <td>Moch. Dazti Amar Wibianto</td>
+                                                <td>Laki-laki</td>
+                                                <td align="center">
+                                                    Aktif
+                                                </td>
+                                            </tr>
+>>>>>>> a7d788509d1d7bb72156fff90a13d323c79cfacd
                                         </tbody>
                                     </table>
                                 </div>

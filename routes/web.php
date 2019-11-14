@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 //Route::get('/', function () {
 //    return view('index');
 //});
@@ -31,3 +32,18 @@ Route::get('page/profil/manager', function () {
 });
 
 Route::post('add/member', 'member@addMember')->name('upload.member');
+=======
+Route::get('/', function () {
+    return view('index');
+});
+
+Route::get('page/daftar_anggota', function () {
+    return view('index');
+});
+Route::get('page/daftar_user', function () {
+    return view('index');
+});
+Route::get('page/profil/kontak/user/manager', function () {
+    return view('index');
+});
+>>>>>>> a7d788509d1d7bb72156fff90a13d323c79cfacd
