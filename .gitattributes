@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
 composer.json merge=binary
-=======
->>>>>>> a7d788509d1d7bb72156fff90a13d323c79cfacd
